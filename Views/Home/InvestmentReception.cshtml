@@ -1,0 +1,25 @@
+﻿@model CessInvest.Models.Domain.Home.VM_Feedback
+@{
+    ViewBag.metaTitle = "Прием инвестиций";
+    ViewBag.metaDescription = "Прием инвестиций";
+    ViewBag.metaKeywords = "";
+    ViewBag.metaRobots = "noindex, nofollow";
+
+    Layout = "~/Views/Shared/Master.cshtml";
+    ViewBag.CurrentMenuItem = "InvestmentReception";
+}
+@section left_middle
+{
+    @Html.Action("_getModuleLastComments", "Home", new { show_article_link = true })
+}
+<section id="investment-reception">
+    <hgroup>
+        <h1>
+            Прием инвестиций
+        </h1>    
+        <h2>Заголовок 2-го уровня</h2>
+    </hgroup>
+
+    <p>Загрузка материала из базы данных</p>
+
+</section>

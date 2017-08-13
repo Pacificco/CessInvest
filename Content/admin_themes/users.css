@@ -1,0 +1,222 @@
+﻿/*Фильтр
+--------------------------------------------------------------------*/
+#users-filters {
+    padding: 5px;
+    background-color: #f4f7f9;
+    margin: 2px 0 10px 2px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 2px solid #cfdee7;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    margin: 0 0 5px 0;
+}
+
+#users-filters .editor-field{
+    display: block;
+    float: left;
+    padding: 3px 5px;
+    position: relative;
+    height: 30px;
+    margin: 0;
+}
+
+#users-filters .editor-field-nic input,
+#users-filters .editor-field-name input,
+#users-filters .editor-field-email input {
+    width: 200px;
+    padding: 3px;
+}
+#users-filters .editor-field-active select {
+    width: 120px;
+    padding: 3px;
+}
+#users-filters input[type=submit] {
+    height: 24px;    
+}
+
+
+/*Новый пользователь
+--------------------------------------------------------------------*/
+
+
+/*Редактирование пользователя
+--------------------------------------------------------------------*/
+#user-editor .editor-field input[type=text],
+#user-editor .editor-field select{
+    padding: 5px;
+    border: 1px solid #9ba6b3;
+}
+
+#user-editor .editor-field{
+    margin: 0 0 3px 0;
+}
+
+#user-editor .editor-field-alias span,
+#user-editor .editor-field-icon span{
+    font-weight: 600;
+    color: navy;
+}
+
+#user-editor .editor-title input[type=text]{
+    width: 930px;
+}
+
+#user-editor .editor-main input[type=text]{
+    width: 930px;
+}
+
+#user-editor .editor-images input[type=text]{
+    width: 500px;
+}
+
+#user-editor .editor-meta input[type=text]{
+    width: 930px;
+}
+
+#user-editor .editor-label {
+    color: #76818f;
+}
+
+#user-editor input[type=submit]{
+    /*padding: 10px 20px;
+    cursor: pointer;
+    background-color: green;
+    color: white;    
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 2px solid darkgreen;*/
+}
+
+#user-editor #Title{
+    font-size:1.2em;
+}
+
+/*Информация о прогнозах
+--------------------------------------------------------------------*/
+
+
+/*Баланс
+--------------------------------------------------------------------*/
+/*#user-add-balance-block .editor-row {
+    clear: both;
+    overflow: hidden;
+}
+#user-add-balance-block .editor-column{
+    float: left;
+    margin-right: 5px; 
+}*/
+#user-add-balance-block .editor-field input[type=text],
+#user-add-balance-block .editor-field select{
+    padding: 5px;
+    border: 1px solid #9ba6b3;
+}
+#user-add-balance-block #TariffId {
+    width: 150px;
+}
+#user-add-balance-block #Sum {
+    width: 100px;
+}
+#user-add-balance-block #Period {
+    width: 200px;
+}
+#user-add-balance-block #Comment {
+    width: 430px;
+}
+#spinning-balance-submit {
+    display: none;
+}
+
+/*История баланса
+--------------------------------------------------------------------*/
+.user-balance-history-block {
+
+}
+
+
+/* Таблица
+--------------------------------------------------------------------*/
+
+table.users {
+    width: 980px;
+    border: 2px solid #c8ceda;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+table.users tr {
+    background: #ffffff;
+}
+table.users tr.evel {
+    background: #f4f5f8;
+}
+table.users td {
+    border-right: 1px solid #c8ceda;
+}
+table.users th {
+    background: #3d3d3d;
+    background: url(/Content/system/bg-dark-strips.gif) top left repeat;
+    color: white;
+    font-weight: normal;
+}
+table.users td.tools, table.users td.published, table.users td.email, table.users td.nic,
+table.users td.registered-at, table.users td.id, table.users td.user-group{
+    text-align: center;
+}
+table.users th.tools {
+    width: 6%;
+    text-align: center;
+}
+table.users th.published {
+    width: 3%;
+    text-align: center;
+}
+table.users th.nic {
+    width: 15%;
+    text-align: center;
+}
+table.users th.fio {
+    width: 28%;
+}
+table.users th.email {
+    width: 17%;
+    text-align: center;
+}
+table.users th.registered-at {
+    text-align: center;
+    width: 15%;
+}
+table.users th.id {
+    width: 6%;
+    text-align: center;
+}
+table.users td {
+    border-bottom: 1px solid #c8ceda;
+}
+table.users td {
+    padding: 5px;
+    font-size: 0.9em;
+    vertical-align: middle;
+}
+table.users th {
+    padding: 8px 4px;
+}
+table.users td a{
+    color: #5280c5;
+    text-decoration: underline; 
+}
+table.users td a:hover{
+    color: #5f88be;
+    text-decoration: none; 
+}
+table.users td.published img {
+    cursor: pointer;
+}
+.users-list table.users img.indicator {
+    display: none;
+}
+table.users td.registered-at {
+    font-size: 0.9em;
+}

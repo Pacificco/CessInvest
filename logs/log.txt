@@ -1,0 +1,13 @@
+ERROR 2017-08-13 09:15:40,681 99202ms BaseController         Http404            - NotFound - http://localhost:10893/publikacii/statii
+ERROR 2017-08-13 09:15:43,412 101933ms BaseController         Http404            - NotFound - http://localhost:10893/publikacii/statii
+ERROR 2017-08-13 09:33:17,078 35631ms BaseController         Http404            - NotFound - http://localhost:10893/123
+ERROR 2017-08-13 10:58:06,195 107942ms BaseController         Http404            - NotFound - http://localhost:10893/123
+ERROR 2017-08-13 11:19:20,564 213270ms BaseController         Http404            - NotFound - http://localhost:10893/123
+ERROR 2017-08-13 11:21:43,363 12335ms BaseController         Http404            - NotFound - http://localhost:10893/123
+ERROR 2017-08-13 12:01:20,936 192703ms BaseController         Http404            - NotFound - http://localhost:10893/123
+ERROR 2017-08-13 13:31:42,150 42252ms BaseController         Http404            - NotFound - http://localhost:10893/123
+ERROR 2017-08-13 14:00:53,868 26505ms BaseController         Http404            - NotFound - http://localhost:10893/123
+ERROR 2017-08-13 14:05:17,941 38518ms BaseController         Http404            - NotFound - http://localhost:10893/123
+ERROR 2017-08-13 14:06:25,164  9746ms BaseController         Http404            - NotFound - http://localhost:10893/123
+ERROR 2017-08-13 14:07:24,395 10917ms BaseController         StatPage           - System.NullReferenceException: —сылка на объект не указывает на экземпл€р объекта.
+   в CessInvest.Controllers.HomeController.StatPage(String page_name) в d:\ѕроекты\ASP.NET MVC\÷есс»нвест\—айт\CessInvest\Controllers\HomeController.cs:строка 55

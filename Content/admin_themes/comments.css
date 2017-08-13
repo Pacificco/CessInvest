@@ -1,0 +1,178 @@
+﻿/*Фильтр
+--------------------------------------------------------------------*/
+#comments-filters {
+    padding: 5px;
+    background-color: #f4f7f9;
+    margin: 2px 0 10px 2px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 2px solid #cfdee7;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    margin: 0 0 5px 0;
+}
+
+#comments-filters .editor-field{
+    display: block;
+    float: left;
+    padding: 3px 5px;
+    position: relative;
+    height: 30px;
+    margin: 0;
+}
+
+#comments-filters .editor-field-title input {
+    width: 340px;
+    padding: 3px;
+}
+#comments-filters .editor-field-category select {
+    width: 160px;
+    padding: 3px;
+}
+#comments-filters .editor-field-active select {
+    width: 120px;
+    padding: 3px;
+}
+
+#comments-filters input[type=submit] {
+    height: 24px;    
+}
+
+
+/*Новая организация
+--------------------------------------------------------------------*/
+
+
+/*Редактирование организации
+--------------------------------------------------------------------*/
+#comment-editor .editor-field input[type=text],
+#comment-editor .editor-field select{
+    padding: 5px;
+    border: 1px solid #9ba6b3;
+}
+
+#comment-editor .editor-field{
+    margin: 0 0 3px 0;
+}
+
+#comment-editor .editor-title, #comment-editor .editor-main,
+ #comment-editor .editor-date {
+    padding: 10px;
+    background-color: #f4f7f9;
+    margin: 2px 0 10px 2px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 2px solid #cfdee7;
+}
+
+#comment-editor .editor-title input[type=text]{
+    width: 930px;
+}
+
+#comment-editor .editor-main input[type=text]{
+    width: 930px;
+}
+
+#comment-editor .editor-label {
+    color: #76818f;
+}
+
+#comment-editor input[type=submit]{
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#comment-editor #Title{
+    font-size:1.2em;
+}
+
+
+/* Таблица
+--------------------------------------------------------------------*/
+
+table.comments {
+    width: 980px;
+    border: 2px solid #c8ceda;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+table.comments tr {
+    background: #ffffff;
+}
+table.comments tr.evel {
+    background: #f4f5f8;
+}
+table.comments td {
+    border-right: 1px solid #c8ceda;
+}
+table.comments th {
+    background: #3d3d3d;
+    background: url(/Content/system/bg-dark-strips.gif) top left repeat;
+    color: white;
+    font-weight: normal;
+}
+table.comments td.tools, table.comments td.published, table.comments td.created-at, table.comments td.published-at,
+table.comments td.confirmed, table.comments td.id, table.comments td.user{
+    text-align: center;
+}
+table.comments th.tools {
+    width: 6%;
+    text-align: center;
+}
+table.comments th.confirmd {
+    width: 3%;
+    text-align: center;
+}
+table.comments th.published {
+    width: 3%;
+    text-align: center;
+}
+table.comments th.text {
+    width: 40%;
+}
+table.comments th.article {
+    width: 23%;
+    text-align: center;
+}
+table.comments th.user {
+    width: 11%;
+    text-align: center;
+}
+table.comments th.created-at {
+    text-align: center;
+    width: 10%;
+}
+table.comments th.id {
+    width: 4%;
+    text-align: center;
+}
+table.comments td {
+    border-bottom: 1px solid #c8ceda;
+}
+table.comments td {
+    padding: 5px;
+}
+table.comments th {
+    padding: 8px 4px;
+}
+table.comments td a{
+    color: #5280c5;
+    text-decoration: underline; 
+}
+table.comments td a:hover{
+    color: #5f88be;
+    text-decoration: none; 
+}
+table.comments td.tools img, 
+table.comments td.published img, 
+table.comments td.confirmed img {
+    cursor: pointer;
+}
+.comments-list table.comments img.indicator {
+    display: none;
+}

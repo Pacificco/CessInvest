@@ -1,0 +1,27 @@
+﻿@using System.Globalization
+@using CessInvest.Models.Domain.Articles
+@model List<VM_ArtItem>
+@{
+    ViewBag.metaTitle = "Главная страница.";
+    ViewBag.metaDescription = "Главная страница.";
+    ViewBag.metaKeywords = "";
+    ViewBag.metaRobots = "noindex, nofollow";
+    
+    Layout = "~/Views/Shared/Master.cshtml";
+    ViewBag.CurrentMenuItem = "home";
+}
+@section left_middle
+{
+    @*@Html.Action("_getModuleLastComments", "Home", new { show_article_link = true })*@
+}
+<section id="home" class="text-content">
+    <hgroup>
+        <h1>
+            Главная страница
+        </h1>    
+        <h2>Заголовок 2-го уровня</h2>
+    </hgroup>
+
+    <p>Загрузка материала из базы данных</p>
+
+</section>

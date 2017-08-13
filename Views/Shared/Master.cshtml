@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    @*<base href="http://cess-invest.net/" />*@
+    
+    <link rel="shortcut icon" type="image/x-icon" href="http://cess-invest.net/favicon.ico" />
+	<link rel="shortcut icon" type="image/png" href="http://cess-invest.net/favicon.png" />
+    
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="@ViewBag.metaRobots" />    
+    
+    <title>@ViewBag.metaTitle</title>
+    <meta name="description" content="@ViewBag.metaDescription" />    
+    <meta name="keywords" content="@ViewBag.metaKeywords" />
+    
+    @Styles.Render("~/Content/css")    
+    @RenderSection("styles", required: false)
+    
+    @Scripts.Render("~/bundles/modernizr")
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <header id="header">
+        <div id="header-inner">
+            <section id="header-line-top">
+               
+            </section>                            
+        </div>
+    </header>
+    <div id="top-menu-wrapper">
+        @Html.Action("_getModuleMainMenu", "Home", new { current_item = String.IsNullOrEmpty(ViewBag.CurrentMenuItem) ? "" : ViewBag.CurrentMenuItem })
+    </div>
+    <section id="wrapper">
+        <div id="column-middle-left">            
+            <div id="main">
+                @RenderSection("middle_top", required: false)
+                @RenderBody()                
+                @RenderSection("middle_bottom", required: false)
+            </div>            
+            <div id="column-left">                
+                @RenderSection("left_top", required: false)
+                @RenderSection("left_middle", required: false)
+                @RenderSection("left_bottom", required: false)
+            </div>
+        </div>
+        <div id="column-right">            
+            @RenderSection("banners_right_top", required: false)                        
+            @RenderSection("right_top", required: false)
+            @RenderSection("right_middle", required: false)
+            @RenderSection("right_bottom", required: false)            
+        </div>
+        <div id="wrapper2"></div>        
+    </section>
+    <footer id="footer">
+        <section id="footer-wrapper">
+            <div id="copyright">                                
+                <p>© @DateTime.Now.Year.ToString() г. ЦессИнвест<p/>                
+            </div>
+            <div id="footer-menu">
+                <div class="footer-menu-column">
+                    @*<p class="header">Главная</p>
+                    <p class="menu-items">                                                                        @Html.RouteLink("Главная", "stat_page", new { page_name = "home" }, new { title = "Главная" })<br />                        
+                    </p>*@
+                </div>
+                <div class="footer-menu-column">
+                    @*<p class="header">Главная</p>
+                    <p class="menu-items">        
+                        <a href="/orgs/banki" title="Инвестиции">Инвестиции</a><br />                        
+                    </p>*@
+                </div>
+                <div class="footer-menu-column">
+                    @*<p class="header">Информация</p>
+                    <p class="menu-items">                                                        <a href="/rules" title="Правила">Правила</a><br />                        <a href="/obratnaya-svyaz" title="Обратная связь">Обратная связь</a>
+                    </p>*@
+                </div>
+            </div>
+            <div id="footer-socials">
+                
+            </div>
+        </section>        
+    </footer>
+    
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")    
+    @RenderSection("scripts", required: false)    
+    
+@*    @Html.Action("_getModuleCounters", "Home", null);*@
+        
+    @*<script src="~/Scripts/jquery.maskedinput.min.js"></script>*@
+    <script src="~/Scripts/main.js"></script>
+    @*<script src="~/Scripts/countdown.js"></script>*@
+
+</body>
+</html>

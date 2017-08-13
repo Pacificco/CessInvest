@@ -1,0 +1,36 @@
+﻿@using System.Globalization
+@using CessInvest.Models.Domain.Articles
+@model VM_Article
+@{
+    Layout = "~/Views/Shared/Master.cshtml";
+    if(!Model.AsSection)
+    {
+        ViewBag.metaTitle = Model.MetaTitle;
+        ViewBag.metaDescription = Model.MetaDesc;
+        ViewBag.metaKeywords = Model.MetaKeys;
+        ViewBag.metaRobots = (Model.MetaNoFollow ? "nofollow" : "follow") + "," + (Model.MetaNoIndex ? "noindex" : "index"); 
+    }
+    ViewBag.CurrentMenuItem = "home";
+}
+@section left_middle
+{
+    @Html.Action("_getModuleLastComments", "Home", new { show_article_link = true })
+}
+@if (String.IsNullOrEmpty(Model.CssId))
+{
+    <article class="text-content @Model.CssClasses">
+}
+else
+{
+    <article id="@Model.CssId" class="text-content @Model.CssClasses">
+}
+    <hgroup>
+        <h1>
+            @Model.Title
+        </h1>    
+        <h2>@Model.SubTitle</h2>
+    </hgroup>
+
+    @Html.Raw(@Model.TextFull)
+
+</article>

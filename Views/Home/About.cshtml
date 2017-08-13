@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.metaTitle = "О нас";
+    ViewBag.metaDescription = "О нас";
+    ViewBag.metaKeywords = "";
+    ViewBag.metaRobots = "noindex, nofollow";
+
+    Layout = "~/Views/Shared/Master.cshtml";
+    ViewBag.CurrentMenuItem = "about";
+}
+@section left_middle
+{
+    @Html.Action("_getModuleLastComments", "Home", new { show_article_link = true })
+}
+<section id="about" class="text-content">
+    <hgroup>
+        <h1>
+            О нас
+        </h1>    
+        <h2>Заголовок 2-го уровня</h2>
+    </hgroup>
+
+    <p>Загрузка материала из базы данных</p>
+</section>

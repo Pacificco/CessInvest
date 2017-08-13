@@ -1,0 +1,27 @@
+﻿@using System.Globalization
+@using CessInvest.Models.Domain.Articles
+@model VM_Article
+@{
+    ViewBag.metaTitle = "Должникам.";
+    ViewBag.metaDescription = "Должникам.";
+    ViewBag.metaKeywords = "";
+    ViewBag.metaRobots = "noindex, nofollow";
+    
+    Layout = "~/Views/Shared/Master.cshtml";
+    ViewBag.CurrentMenuItem = "ForDebtors";
+}
+@section left_middle
+{
+    @Html.Action("_getModuleLastComments", "Home", new { show_article_link = true })
+}
+<section id="for-debtors" class="text-content">
+    <hgroup>
+        <h1>
+            Должникам
+        </h1>    
+        <h2>Заголовок 2-го уровня</h2>
+    </hgroup>
+
+    <p>Загрузка материала из базы данных</p>
+
+</section>

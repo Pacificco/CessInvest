@@ -1,0 +1,7 @@
+﻿@using CessInvest.Models.
+@using CessInvest.Models.Helpers
+@*@model List<VM_Category>
+@{        
+    Layout = null;
+}
+@Html.CategoriesMenu(Model, 0, (x,y) => Url.Action("Blog", "Articles", new {categoryId = x, page = y}))*@
